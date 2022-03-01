@@ -20,6 +20,7 @@ requirements:
     - python >=3.8
   run:
     - cartopy
+    - gdal
     - matplotlib-base
     - netcdf4
     - numpy
