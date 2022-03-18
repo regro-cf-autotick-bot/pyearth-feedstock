@@ -1,5 +1,5 @@
 {% set name = "pyearth" %}
-{% set version = "0.1.18" %}
+{% set version = "0.1.20" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyearth-{{ version }}.tar.gz
-  sha256: 367866ee9ac90f65dd69bfd82a7f7b6303eeff68399271cf6558869f90d556e5
+  sha256: fe6bac6670292642cfce0ba5758a6e5424532d504a199baa6d4e58bf01ff8a92
 
 build:
   noarch: python
@@ -40,8 +40,8 @@ test:
 about:
   home: https://github.com/changliao1025/pyearth
   summary: Python for Earth Science.
-  license: MIT
-  license_file: LICENSE
+  license: BSD-2-Clause
+  license_file: LICENSE.md
 
 extra:
   recipe-maintainers:
