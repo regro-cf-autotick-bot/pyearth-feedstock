@@ -1,5 +1,5 @@
 {% set name = "pyearth" %}
-{% set version = "0.1.20" %}
+{% set version = "0.1.22" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyearth-{{ version }}.tar.gz
-  sha256: fe6bac6670292642cfce0ba5758a6e5424532d504a199baa6d4e58bf01ff8a92
+  sha256: 36e4242f75a7baa58c953d0ff71b5178eb6e6e6773bcd76bbe6a7021e1fc33a1
 
 build:
   noarch: python
