@@ -22,7 +22,7 @@ requirements:
     - python >=3.8
     - numpy
     - gdal    
-    - matplotlib
+    - matplotlib-base
     - cartopy
     - requests
     - netCDF4       
