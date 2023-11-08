@@ -21,13 +21,13 @@ requirements:
   run:
     - python >=3.8
     - numpy
-    - gdal    
+    - gdal
     - matplotlib
     - cartopy
     - requests
-    - netCDF4       
-    - pandas    
-    - scipy    
+    - netCDF4
+    - pandas
+    - scipy
     - statsmodels
 
 test:
