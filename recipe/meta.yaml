@@ -19,14 +19,15 @@ requirements:
     - pip
     - python >=3.8
   run:
-    - cartopy
-    - gdal
-    - matplotlib-base
-    - netcdf4
-    - numpy
-    - pandas
     - python >=3.8
-    - scipy
+    - numpy
+    - gdal    
+    - matplotlib
+    - cartopy
+    - requests
+    - netCDF4       
+    - pandas    
+    - scipy    
     - statsmodels
 
 test:
