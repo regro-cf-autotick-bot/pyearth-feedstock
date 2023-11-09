@@ -25,7 +25,6 @@ requirements:
     - matplotlib-base
     - cartopy
 
-
 test:
   imports:
     - pyearth
