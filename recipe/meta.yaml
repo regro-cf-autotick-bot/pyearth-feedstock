@@ -1,5 +1,5 @@
 {% set name = "pyearth" %}
-{% set version = "0.1.22" %}
+{% set version = "0.1.23" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyearth-{{ version }}.tar.gz
-  sha256: 36e4242f75a7baa58c953d0ff71b5178eb6e6e6773bcd76bbe6a7021e1fc33a1
+  sha256: 083822667108bdb913ed1c3a5ea2ce6a289a33c75999034ee23476ead94e9341
 
 build:
   noarch: python
@@ -21,14 +21,10 @@ requirements:
   run:
     - python >=3.8
     - numpy
-    - gdal
-    - matplotlib
+    - gdal    
+    - matplotlib-base
     - cartopy
-    - requests
-    - netCDF4
-    - pandas
-    - scipy
-    - statsmodels
+
 
 test:
   imports:
