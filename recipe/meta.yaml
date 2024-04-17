@@ -1,13 +1,14 @@
 {% set name = "pyearth" %}
-{% set version = "0.1.24" %}
+{% set git_rev = "master" %}
+{% set version = "0.1.25" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyearth-{{ version }}.tar.gz
-  sha256: b58a743cc0058a3d12a56bb9c505d2f15a1cfd8b189aafa8007435deee8626ed
+  git_rev: {{ git_rev }}
+  git_url: https://github.com/changliao1025/pyearth
 
 build:
   noarch: python
@@ -36,7 +37,7 @@ test:
 about:
   home: https://github.com/changliao1025/pyearth
   summary: Python for Earth Science.
-  license: BSD-2-Clause
+  license: BSD-3-Clause
   license_file: LICENSE.md
 
 extra:
