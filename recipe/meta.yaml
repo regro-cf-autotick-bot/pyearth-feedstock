@@ -13,14 +13,14 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python {{ python_min }}
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - numpy
     - gdal    
     - matplotlib-base
@@ -33,6 +33,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/changliao1025/pyearth
