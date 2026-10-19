@@ -1,6 +1,6 @@
 context:
   name: pyearth
-  version: 0.2.3
+  version: "0.2.4"
 
 package:
   name: ${{ name|lower }}
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://github.com/changliao1025/pyearth/archive/refs/tags/v${{ version }}.tar.gz
-  sha256: 4dc3b0fb11a0402de5fdccf41e762b28033abc663a5efc80652d38e6eff14f98
+  sha256: d8136c35b650fd8109c3af47c3e818d8e5a9489b0ef3ba25f5343d3ca96729c7
 
 build:
-  number: 1
+  number: 0
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --ignore-installed
   skip:
     - win and vc<14
